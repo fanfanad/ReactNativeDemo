@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 10:58:50
- * @LastEditTime: 2019-08-10 12:35:05
+ * @LastEditTime: 2019-08-10 13:54:54
  * @LastEditors: Please set LastEditors
  */
 // /*
@@ -103,7 +103,7 @@ import {
   View,Text,
   StyleSheet,AppRegistry
 } from 'react-native'
-
+import Hello from './src/Hello'
 export default class MyRnApp extends Component{
   constructor(props){
     super(props);
@@ -111,9 +111,7 @@ export default class MyRnApp extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <Text style={styles.content} >
-          Hello,ReactNative,This is My first ReactNative Project,Hahahhahahhahhahhahahhaahh
-        </Text>
+        <Hello/>
       </View>
     );
   }
@@ -123,13 +121,6 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     marginTop: 25,
-    justifyContent: 'center',
-    alignItems:"center"
-  },
-  content:{
-    fontSize: 18,
-    color:"#3df5e2",
-    fontWeight: 'bold',
   }
 })
 
