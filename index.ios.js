@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 10:58:50
- * @LastEditTime: 2019-08-10 14:11:16
+ * @LastEditTime: 2019-08-10 14:21:59
  * @LastEditors: Please set LastEditors
  */
 // /*
@@ -101,7 +101,7 @@
 import React, { Component } from 'react'
 import {
   View,Text,
-  StyleSheet,AppRegistry
+  StyleSheet,AppRegistry,ScrollView
 } from 'react-native'
 import Hello from './src/Hello'
 export default class MyRnApp extends Component{
@@ -111,7 +111,9 @@ export default class MyRnApp extends Component{
   render(){
     return (
       <View style={styles.container}>
+        <ScrollView>
         <Hello/>
+        </ScrollView>
       </View>
     );
   }
