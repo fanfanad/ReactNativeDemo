@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 10:58:50
- * @LastEditTime: 2019-08-09 16:50:31
+ * @LastEditTime: 2019-08-10 12:35:05
  * @LastEditors: Please set LastEditors
  */
 // /*
@@ -100,40 +100,38 @@
 
 import React, { Component } from 'react'
 import {
-  DatePickerIOS,
-  View,
+  View,Text,
   StyleSheet,AppRegistry
 } from 'react-native'
 
-export default class MyRnApp extends Component {
-  constructor(props) {
+export default class MyRnApp extends Component{
+  constructor(props){
     super(props);
-    this.state = { chosenDate: new Date() };
-
-    this.setDate = this.setDate.bind(this);
   }
-
-  setDate(newDate) {
-    this.setState({chosenDate: newDate})
-  }
-
-  render() {
+  render(){
     return (
       <View style={styles.container}>
-        <DatePickerIOS
-          date={this.state.chosenDate}
-          onDateChange={this.setDate}
-        />
+        <Text style={styles.content} >
+          Hello,ReactNative,This is My first ReactNative Project,Hahahhahahhahhahhahahhaahh
+        </Text>
       </View>
-    )
+    );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
+  container:{
     flex: 1,
-    justifyContent: 'center'
+    marginTop: 25,
+    justifyContent: 'center',
+    alignItems:"center"
   },
+  content:{
+    fontSize: 18,
+    color:"#3df5e2",
+    fontWeight: 'bold',
+  }
 })
+
 
 AppRegistry.registerComponent('MyRnApp', () => MyRnApp);
