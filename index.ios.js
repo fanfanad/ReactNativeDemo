@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 10:58:50
- * @LastEditTime: 2019-08-12 10:46:14
+ * @LastEditTime: 2019-08-12 16:29:43
  * @LastEditors: Please set LastEditors
  */
 // /*
@@ -107,6 +107,7 @@ import Hello from './src/Hello'
 import TextDemo from './src/TextDemo'
 import MyBtn from './src/MyBtn'
 import FlexBox from './src/FlexBox'
+import MyScrollView from './src/scrollView'
 const msgs=[
   "hello I ",
   "hehe",
@@ -120,7 +121,8 @@ export default class MyRnApp extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <FlexBox/>
+        <MyScrollView/>
+        {/* <FlexBox/> */}
         {/* {
           msgs.map((msg,index)=>{
             return <Hello msg={msg} key={index}/>
@@ -137,6 +139,7 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     marginTop: 25,
+    //backgroundColor:"green"
     // justifyContent: 'center',
     // alignItems:"center"
   }

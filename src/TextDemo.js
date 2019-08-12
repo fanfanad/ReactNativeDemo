@@ -2,11 +2,11 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-10 19:28:57
- * @LastEditTime: 2019-08-10 19:45:15
+ * @LastEditTime: 2019-08-12 15:43:36
  * @LastEditors: Please set LastEditors
  */
 import React,{Component} from "react"
-import {View,TextInput,StyleSheet,Text} from 'react-native'
+import {View,TextInput,StyleSheet,Text,Platform} from 'react-native'
 
 export default class TextDemo extends Component{
     constructor(props){
@@ -16,6 +16,8 @@ export default class TextDemo extends Component{
         }
     }
     render(){
+        const os=Platform.OS;
+        console.log(os)
         return (
             <View style={styles.container}>
                 {/* onChangeText类似于web文本框的onChange */}
@@ -25,6 +27,7 @@ export default class TextDemo extends Component{
                     })
                 }}/>
                 <Text>{this.state.text}</Text>
+                <Text>{os}</Text>
             </View>
         )
     }
