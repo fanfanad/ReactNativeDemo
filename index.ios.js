@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 10:58:50
- * @LastEditTime: 2019-08-10 14:21:59
+ * @LastEditTime: 2019-08-10 20:11:40
  * @LastEditors: Please set LastEditors
  */
 // /*
@@ -104,6 +104,14 @@ import {
   StyleSheet,AppRegistry,ScrollView
 } from 'react-native'
 import Hello from './src/Hello'
+import TextDemo from './src/TextDemo'
+import MyBtn from './src/MyBtn'
+const msgs=[
+  "hello I ",
+  "hehe",
+  "hahha",
+  "xixi"
+]
 export default class MyRnApp extends Component{
   constructor(props){
     super(props);
@@ -111,9 +119,13 @@ export default class MyRnApp extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <ScrollView>
-        <Hello/>
-        </ScrollView>
+        {/* {
+          msgs.map((msg,index)=>{
+            return <Hello msg={msg} key={index}/>
+          })
+        } */}
+        {/* <TextDemo placeholder="随便写的"/> */}
+        <MyBtn lable="按钮" style={{width:300,backgroundColor:"#DDDDDD"}} onPress={()=>{}}/>
       </View>
     );
   }
@@ -123,6 +135,8 @@ const styles = StyleSheet.create({
   container:{
     flex: 1,
     marginTop: 25,
+    justifyContent: 'center',
+    alignItems:"center"
   }
 })
 
