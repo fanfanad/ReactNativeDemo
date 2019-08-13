@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-09 10:58:50
- * @LastEditTime: 2019-08-12 16:29:43
+ * @LastEditTime: 2019-08-13 18:59:43
  * @LastEditors: Please set LastEditors
  */
 // /*
@@ -108,6 +108,9 @@ import TextDemo from './src/TextDemo'
 import MyBtn from './src/MyBtn'
 import FlexBox from './src/FlexBox'
 import MyScrollView from './src/scrollView'
+import MyFlatList from './src/FlatListDemo'
+import ModalComp from './src/modal'
+import NetInfoDemo from './src/netinfo'
 const msgs=[
   "hello I ",
   "hehe",
@@ -121,7 +124,10 @@ export default class MyRnApp extends Component{
   render(){
     return (
       <View style={styles.container}>
-        <MyScrollView/>
+        {/* <NetInfoDemo/> */}
+        <ModalComp/>
+        {/* <MyFlatList/> */}
+        {/* <MyScrollView/> */}
         {/* <FlexBox/> */}
         {/* {
           msgs.map((msg,index)=>{

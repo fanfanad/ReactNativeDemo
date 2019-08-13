@@ -2,7 +2,7 @@
  * @Description: In User Settings Edit
  * @Author: your name
  * @Date: 2019-08-12 16:10:20
- * @LastEditTime: 2019-08-12 17:00:49
+ * @LastEditTime: 2019-08-13 18:59:30
  * @LastEditors: Please set LastEditors
  */
 import React,{Component} from 'react'
@@ -40,7 +40,6 @@ export default class MyScrollView extends Component{
                 isRefreshing:false
             })
         }, 3000);
-        
     }
     _renderList(){
         //alert("hahah");
@@ -112,6 +111,5 @@ const styles=StyleSheet.create({
         fontSize:20,
         color:"#000"
     }
-
 })
 
